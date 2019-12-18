@@ -86,17 +86,6 @@ Things you may want to cover:
 - has_many_attached :images
 - has_many :comments
 
-
-## credit_cardsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|user|references|null: false,foreign_key: true|
-|customer_id|string|null: false|
-|card_id|string|null: false|
-
-### Association
-- belongs_to :user
-
 ## credit_cardsテーブル
 |Column|Type|Options|
 |------|----|-------|
