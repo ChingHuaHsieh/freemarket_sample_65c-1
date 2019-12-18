@@ -82,6 +82,7 @@ Things you may want to cover:
 
 ### Association
 - belongs_to :user
+- belongs_to :category
 - belongs_to :brand
 - has_many_attached :images
 - has_many :comments
@@ -115,29 +116,11 @@ Things you may want to cover:
 - belongs_to :user
 - belongs_to :product
 
-## first_categoriesテーブル
+## categoriesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
+|ancestry|string||
 
 ### Association
-- has_many :second_categories
-
-## second_categoriesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null: false|
-|first_catecgries|references|null: false,foreign_key: true|
-
-### Association
-- belongs_to :first_categories
-- has_many :second_categories
-
-## third_categoriesテーブル
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null: false|
-|second_categories|references|null: false,foreign_key: true|
-
-### Association
-- belongs_to :second_categories
+- has_many :products
