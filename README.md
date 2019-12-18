@@ -115,7 +115,7 @@ Things you may want to cover:
 - belongs_to :user
 - belongs_to :product
 
-## first_categorisテーブル
+## first_categoriesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
@@ -127,7 +127,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|first_catecories|references|null: false,foreign_key: true|
+|first_catecgries|references|null: false,foreign_key: true|
 
 ### Association
 - belongs_to :first_categories
@@ -137,7 +137,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|second_catecories|references|null: false,foreign_key: true|
+|second_categories|references|null: false,foreign_key: true|
 
 ### Association
 - belongs_to :second_categories
